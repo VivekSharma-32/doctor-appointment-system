@@ -1,7 +1,29 @@
 {
+  "name": "doctor-appointment-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivekSharma-32/doctor-appointment-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VivekSharma-32/doctor-appointment-system/issues"
+  },
+  "homepage": "https://github.com/VivekSharma-32/doctor-appointment-system#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
