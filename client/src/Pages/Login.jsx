@@ -13,8 +13,8 @@ const Login = () => {
     try {
       dispatch(showLoading());
       const res = await axios.post("/api/v1/user/login", values);
+      window.location.reload();
       dispatch(hideLoading());
-
       if (res.data.success) {
         localStorage.setItem("token", res?.data?.token);
         message.success("Login successfully");
@@ -47,7 +47,7 @@ const Login = () => {
             Not a user. Sign up
           </Link>
           <button className="btn btn-primary" type="submit">
-            Register
+            Login
           </button>
         </Form>
       </div>
